@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explorador del Clima</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="contenedor">
+            <h1>🌤️ Explorador del Clima</h1>
+            <p>Consulta el clima de diferentes ciudades</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="buscador">
+
+            <h2>Consultar clima</h2>
+
+            <div class="formulario">
+
+                <input 
+                    type="text" 
+                    id="ciudad"
+                    placeholder="Escribe una ciudad..."
+                >
+
+                <button id="btnBuscar">
+                    Buscar
+                </button>
+
+            </div>
+
+            <p id="mensaje"></p>
+
+        </section>
+
+
+        <section id="resultado" class="resultado">
+
+            <div class="tarjeta-clima">
+
+                <h2 id="nombreCiudad">
+                    Busca una ciudad
+                </h2>
+
+                <div class="temperatura">
+                    <span id="temperatura">--</span> °C
+                </div>
+
+                <p id="descripcion">
+                    Ingresa una ciudad para consultar el clima.
+                </p>
+
+                <div class="informacion">
+
+                    <div class="dato">
+                        <span>🌡️</span>
+                        <strong>Temperatura</strong>
+                        <p id="tempActual">-- °C</p>
+                    </div>
+
+                    <div class="dato">
+                        <span>💨</span>
+                        <strong>Viento</strong>
+                        <p id="viento">-- km/h</p>
+                    </div>
+
+                    <div class="dato">
+                        <span>📍</span>
+                        <strong>Ubicación</strong>
+                        <p id="ubicacion">--</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <p>
+            Actividad 4 - Herramientas de Software
+        </p>
+
+        <p>
+            Ingeniería de Software y Ciencia de Datos
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
